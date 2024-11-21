@@ -1,0 +1,181 @@
+
+.about{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10%;
+    margin-bottom: 5%;
+   margin-left: 8%;
+ 
+   
+
+}
+.iconabout{
+  
+    padding-inline: 4%;
+color: #4CAF50;
+}
+
+.empabout{
+    font-size: 65px;
+    font-weight: bold;
+   margin-left: 9%;
+    padding-inline: 3%;
+}
+.aboutpar{
+    font-size: 18px;
+    margin-left: 11%;
+    margin-top: 3%;
+    
+    
+}
+.custom-button2 {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 20px 65px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    font-size: 18px; 
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    margin-top: 6%;
+    margin-left: 11%;
+    
+    
+  }
+  
+  .custom-button2:hover {
+    background-color: #45a049; 
+  }
+
+
+.consulting-team-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    margin-bottom: 4%;
+    
+  
+}
+
+.about-us {
+    max-width: 60%;
+}
+
+
+
+h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #6b6b6b;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.read-more-btn {
+    background-color: #A5CD39;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 30%;
+    margin-top: 5%;
+}
+
+.info-item {
+    background-color: #4CAF50;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.info-item .icon {
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+}
+
+.infoonly, p {
+    color:white;    
+}
+
+h2 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 10px;
+    
+}
+
+
+
+.knowledge-marketing {
+    background-image: url('https://images.unsplash.com/photo-1631377894885-22b7d88526e9?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Ensures text is readable over the image */
+    position: relative; /* For any positioning needs */
+}
+
+
+.knowledge-marketing2 {
+    background-image: url('https://images.unsplash.com/photo-1543269664-02e941c052f7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Ensures text is readable over the image */
+    position: relative; /* For any positioning needs */
+}
+
+
+.knowledge-marketing2 h3 {
+    padding-top: 25%;
+    position: relative;
+    z-index: 2; /* Keeps the text above the image */
+}
+.knowledge-marketing h3 {
+    padding-top: 25%;
+    position: relative;
+    z-index: 2; /* Keeps the text above the image */
+}
+
+.knowledge-marketing .icon {
+    position: relative;
+    z-index: 2; /* Keeps the icon above the image */
+}
+
+.knowledge-marketing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Optional: adds a dark overlay for better readability */
+    z-index: 1; /* Ensures the overlay is above the image but below the text */
+}
+
+@media (max-width: 768px) {
+    .consulting-team-container {
+        flex-direction: column;
+    }
+
+    .about-us, .info-grid {
+        max-width: 100%;
+    }
+}

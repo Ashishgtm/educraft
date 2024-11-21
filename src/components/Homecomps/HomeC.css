@@ -1,0 +1,49 @@
+.homec {
+  display: flex;
+  background-color: rgb(95, 94, 94);
+  align-items: center; /* This aligns items vertically in the center */
+  justify-content: space-between; /* Adjust space between left and right sections */
+  
+}
+
+.image-homec {
+  width: 100%; /* Ensure the image takes a percentage of the width */
+  margin-left: 20%; /* Smaller margin */
+}
+
+.homec-right {
+  flex: 1; /* Ensure it takes available space */
+  margin-left: 15%; /* Smaller margin */
+  margin-top: -30%;
+}
+
+.service {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center; /* Align text and icon in the center */
+  margin-top: 25%;
+}
+
+.iconservice {
+  margin-right: 10%; /* Add space between icon and text */
+  color: #4CAF50;
+}
+
+.ourservices{
+  display: flex;
+  font-size: 65px;
+  font-weight: bold;
+  color: wheat;
+  margin-top: 3%;
+}
+.fewwords{
+display: flex;
+font-size: 60px;
+font-weight: bold;
+color: wheat;
+margin-top: 3%;
+color: #4CAF50;
+}
+
