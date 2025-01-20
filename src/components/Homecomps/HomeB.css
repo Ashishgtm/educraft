@@ -17,7 +17,7 @@ color: #4CAF50;
 }
 
 .empabout{
-    font-size: 65px;
+    font-size: 60px;
     font-weight: bold;
    margin-left: 9%;
     padding-inline: 3%;
@@ -72,11 +72,12 @@ h1 {
     margin-bottom: 20px;
 }
 
-p {
-    color: #6b6b6b;
-    font-size: 18px;
-    margin-bottom: 40px;
-}
+.counter {
+    margin-top: 17%;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
 
 .read-more-btn {
     background-color: #A5CD39;
@@ -170,12 +171,179 @@ h2 {
     z-index: 1; /* Ensures the overlay is above the image but below the text */
 }
 
-@media (max-width: 768px) {
-    .consulting-team-container {
-        flex-direction: column;
-    }
 
-    .about-us, .info-grid {
-        max-width: 100%;
+
+
+/* For screens smaller than 1024px (tablets and small desktops) */
+@media (max-width: 1024px) {
+    .about {
+      font-size: 16px;
+      margin-top: 5%;
+      margin-left: 5%;
     }
-}
+  
+    .empabout {
+      font-size: 50px;
+      margin-left: 6%;
+    }
+  
+    .aboutpar {
+      font-size: 16px;
+      margin-left: 8%;
+    }
+  
+    .custom-button2 {
+      padding: 15px 50px;
+      font-size: 16px;
+      margin-left: 8%;
+    }
+  
+    .consulting-team-container {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .about-us {
+      max-width: 90%;
+    }
+  
+    h1 {
+      font-size: 36px;
+    }
+  
+    .counter {
+       margin-top: 5%;
+      }
+    
+    .info-grid {
+      grid-template-columns: 1fr; /* Stack info items in a single column */
+      max-width: 90%;
+      margin: 3% auto;
+    }
+    .infoonly{
+        margin-top: 45%;   
+    }
+  
+    .knowledge-marketing, .knowledge-marketing2 {
+      background-size: cover;
+      background-position: center;
+      height: 50vh; /* Reduce the height */
+      border-radius: 20%;
+
+    }
+  
+    .knowledge-marketing h3, .knowledge-marketing2 h3 {
+      padding-top: 20%;
+      font-size: 24px;
+      border-radius: 20%;
+
+    }
+  }
+  
+  /* For screens smaller than 768px (mobile devices) */
+  @media (max-width: 768px) {
+    .about {
+      font-size: 14px;
+      margin-top: 5%;
+    }
+  
+    .empabout {
+      font-size: 40px;
+      margin-left: 4%;
+    }
+  
+    .aboutpar {
+      font-size: 14px;
+      margin-left: 5%;
+    }
+  
+    .custom-button2 {
+      padding: 10px 30px;
+      font-size: 14px;
+      margin-left: 5%;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+    .counter {
+        margin-top: 5%;
+       }
+       .infoonly{
+        margin-top: 45%;   
+    }
+  
+    .info-grid {
+      gap: 15px; /* Reduce gap */
+    }
+  
+    .knowledge-marketing, .knowledge-marketing2 {
+      height: 40vh; /* Further reduce the height */
+    }
+  
+    .knowledge-marketing h3, .knowledge-marketing2 h3 {
+      padding-top: 15%;
+      font-size: 20px;
+      border-radius: 20%;
+
+    }
+  }
+  
+  /* For screens smaller than 480px (small phones) */
+  @media (max-width: 480px) {
+    .about {
+      font-size: 12px;
+      margin-top: 3%;
+    }
+  
+    .empabout {
+      font-size: 30px;
+      margin-left: 2%;
+    }
+  
+    .aboutpar {
+      font-size: 12px;
+      margin-left: 3%;
+    }
+  
+    .custom-button2 {
+      padding: 8px 20px;
+      font-size: 12px;
+      margin-left: 3%;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    p {
+      font-size: 12px;
+    }
+  
+    .counter {
+        margin-top: 5%;
+       }
+       .infoonly{
+        margin-top: 45%;   
+    }
+     
+    .info-grid {
+      gap: 10px; /* Reduce gap further */
+    }
+  
+    .knowledge-marketing, .knowledge-marketing2 {
+      height: 30vh; /* Minimized height for small screens */
+      border-radius: 20%;
+    }
+  
+    .knowledge-marketing h3, .knowledge-marketing2 h3 {
+      padding-top: 10%;
+      font-size: 18px;
+      border-radius: 20%;
+    }
+  }
+  

@@ -1,0 +1,67 @@
+.container {
+    max-width: auto;
+   
+    
+  }
+  
+.whychooseus {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    margin-top: 2%;
+    gap: 2%;
+
+  }
+  .whyfewword{
+    display: flex;
+    font-size: 50px;
+    font-weight: bold;
+   margin-left:8% ;
+   margin-top: 1%;
+    color: black;
+   
+    }  
+    
+.iconservices {
+   margin-left: 8%; /* Add space between icon and text */
+    color: #4CAF50;
+    
+    
+  }
+
+  .sectioncard {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next row on smaller screens */
+    justify-content: space-between; /* Space cards evenly */
+    margin-top: 2%;
+    margin-right: 4%;
+  }
+  
+  .cards {
+    flex: 1 1 300px; /* Set a minimum width for cards */
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .card-text{
+    text-align: center;
+    margin-left: 20%;
+    margin-right: -20%;
+    
+   
+  }
+  
+  .cards img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .section {
+      justify-content: center; /* Center cards on smaller screens */
+    }
+  }

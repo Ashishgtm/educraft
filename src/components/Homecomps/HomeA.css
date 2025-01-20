@@ -9,8 +9,8 @@ margin-right: 8%;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-top: 30%;
-    margin-bottom: 5%;
+    margin-top: 25%;
+    margin-bottom: 1%;
    
 
 }
@@ -20,7 +20,7 @@ margin-right: 8%;
 color: #4CAF50;
 }
 .educrafthead{
-    font-size: 80px;
+    font-size: 60px;
     font-weight: bold;
     color: #4CAF50;
     padding-inline: 3%;
@@ -56,10 +56,170 @@ color: #4CAF50;
     background-color: #45a049; 
   }
 
-/* image */
 
-.imagefirst{
-    width: 100%;
+
+
+.carousel-container {
+    right: 0;
+    width: 50%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+  }
+  
+  .carousel-image {
     margin-top: 15%;
+
+    width: 100%;
+    height: 80%;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 9.9s ease-in-out;
+    animation: fadeIn s infinite;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+/* Responsive for screens smaller than 1024px (tablets and small desktops) */
+@media (max-width: 1024px) {
+  .homeAcontent {
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .educrafthead {
+    font-size: 45px; /* Slightly reduce font size */
+    padding-inline: 0;
+  }
+
+  .educraftabroad {
+    font-size: 55px; /* Adjust font size */
+    padding-left: 0;
+    margin-top: 10px;
+  }
+
+  .welcome {
+    font-size: 16px; /* Make the text slightly smaller */
+    /* Center align welcome text */
+    margin-top: 4%;
+    margin-bottom: 2%;
     
+  }
+
+  .unlock {
+    font-size: 15px; /* Adjust to fit smaller screens */
+    margin: 10px auto;
+    line-height: 1.5;
+  }
+
+  .custom-button {
+    padding: 10px 40px; /* Adjust padding for smaller buttons */
+    font-size: 14px;
+    margin: 10px auto; /* Center align button */
+    display: block; /* Ensure it takes a single row */
+  }
+
+  .carousel-container {
+    width: 100%; /* Full width for better fit */
+    height: auto; /* Let height adjust naturally */
+  }
+
+  .carousel-image {
+    width: 90%; /* Scale down the image */
+    max-height: 300px; /* Limit the height */
+    margin: 0 auto; /* Center-align the image */
+    border-radius: 10%; /* Keep rounded corners */
+    object-fit: cover; /* Ensure the image scales properly */
+  }
+
 }
+
+  
+  /* Responsive for screens smaller than 768px (mobile devices) */
+  @media (max-width: 768px) {
+    .homeAcontent {
+      margin-top: 10%;
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+  
+    .educrafthead {
+      font-size: 40px;
+      padding-inline: 1%;
+    }
+  
+    .educraftabroad {
+      font-size: 50px;
+      padding-left: 5px;
+    }
+  
+    .welcome {
+      font-size: 14px;
+      margin-top: 12%;
+    }
+  
+    .unlock {
+      font-size: 14px;
+      margin-left: 1%;
+    }
+  
+    .custom-button {
+      padding: 10px 30px;
+      font-size: 14px;
+      margin-top: 2%;
+      margin-left: 1%;
+    }
+  
+    .carousel-container {
+      width: 100%;
+      height: 40vh; /* Adjust carousel height */
+    }
+  
+    .carousel-image {
+      margin-top: 5%;
+      height: 100%; /* Adjust image height */
+    }
+  }
+  
+  /* Responsive for screens smaller than 480px (small phones) */
+  @media (max-width: 480px) {
+    .educrafthead {
+      font-size: 30px;
+    }
+  
+    .educraftabroad {
+      font-size: 40px;
+    }
+  
+    .welcome {
+      font-size: 12px;
+      margin-top: 20%;
+    }
+  
+    .unlock {
+      font-size: 12px;
+    }
+  
+    .custom-button {
+      padding: 8px 20px;
+      font-size: 12px;
+    }
+  
+    .carousel-image {
+      margin-top: 5%;
+      height: 100%; /* Adjust image height */
+    }
+  }
+  
