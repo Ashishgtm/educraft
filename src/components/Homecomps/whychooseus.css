@@ -64,4 +64,14 @@
     .section {
       justify-content: center; /* Center cards on smaller screens */
     }
+    .whychooseus {
+        font-size: 12px;
+        
+    
+      }
+      .whyfewword{
+        font-size: 25px;
+        
+       
+        }  
   }
