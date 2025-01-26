@@ -33,7 +33,6 @@ const HomeA = () => {
     <span className='educrafthead'>Studies </span>
     <div className='unlock'>Unlock Your Global Potential with Educraft Abroad Studies.</div>
 
-
     <button className="custom-button">
       Apply Now
     </button>
