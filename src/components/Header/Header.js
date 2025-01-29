@@ -23,7 +23,7 @@ const Header = () => {
       </button>
       <nav className={`nav ${isNavOpen ? 'open' : ''}`}>
       <Link to="/home" className={location.pathname === "/home" ? "active" : ""}>HOME</Link> 
-      <Link to="/universities" className={location.pathname === "/universities" ? "active" : ""}>HOW WE WORK</Link> 
+      <Link to="/about" className={location.pathname === "/about" ? "active" : ""}>ABOUT</Link> 
 
         <Link to="/services" className={location.pathname === "/services" ? "active" : ""}>BENEFITS</Link>
         <Link to="/events" className={location.pathname === "/events" ? "active" : ""}>OFFER</Link> 

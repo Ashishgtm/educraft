@@ -1,0 +1,18 @@
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 4%;
+  margin-bottom: 3%;
+ 
+  }
+
+video {
+  width: 60%;
+  height: 70%;
+  border-radius: 20%;
+
+  box-shadow: 0px 2px 35px rgb(7, 235, 7);
+
+}

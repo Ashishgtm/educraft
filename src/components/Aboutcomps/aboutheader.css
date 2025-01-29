@@ -1,0 +1,38 @@
+.top-section{
+    margin-top: 4%;
+    padding: 60px 50px;
+    background: linear-gradient(
+    90deg,
+    white -40%,
+    #4ae94f -100%,
+    #000 100%
+    );
+    display: flex;
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    gap: 50px; /* Adds spacing between text and image */
+    text-align: center; /* Centers text inside the header */
+    flex-wrap: wrap; /* Ensures responsiveness */
+
+}
+.about-header{
+    max-width: 500px; /* Adjust width as needed */
+}
+.about-header h1{
+    font-size: 4rem;
+    color: #444343;
+    text-shadow: 6px 14px 6px rgba(19, 18, 18, 0.829); /* Adds a smooth shadow */
+
+}
+.about-header h3{
+    color: white;
+    margin-top: -1%;
+    
+}
+.about-img{
+    width: 200px;  /* Make sure it's square */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover; 
+
+}

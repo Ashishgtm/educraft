@@ -44,7 +44,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <div>
+    <div className='testi-div'>
     <div className='testimo'><FaCircleNotch className='icontesti' />Testimonial </div>
          <div className='testimon'>Our Students' Stories</div>   
 

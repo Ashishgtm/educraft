@@ -1,6 +1,9 @@
 import React,{ useEffect, useState }from 'react'
 import './HomeB.css'
 import { FaCircleNotch } from "react-icons/fa6";
+import { Link} from 'react-router-dom';
+
+
 
 const HomeB = () => {
 
@@ -42,9 +45,10 @@ const HomeB = () => {
    <div className='aboutpar'>Educraft Abroad Studies Pvt. Ltd. is a pioneer registered institution established in Kathmandu, registered under the Act of Nepal Government.  
 At Educraft Abroad Studies, we understand that choosing the right courses and country for your study abroad experience is a pivotal decision. 
 </div>
+<Link to='/about'>
 <button className="custom-button2">
       Read more ---
-    </button>
+    </button></Link>
 </div>
 
 <div className="info-grid">
