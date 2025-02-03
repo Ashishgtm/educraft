@@ -1,13 +1,15 @@
 import React, { useLayoutEffect } from "react";
 import Header from "../Header/Header";
-import "../Aboutcomps/aboutheader.css";
-import { gsap } from "gsap";
-import AboutbodyA from "./AboutbodyA";
-import AboutbodyB from "./AboutbodyB";
-import AboutbodyC from "./AboutbodyC";
-import Footer from '../Footer/Footer'
+import "../Contactcomps/contactheader.css";
+import "./ContactSection";
 
-const Aboutheader = () => {
+
+import { gsap } from "gsap";
+
+import Footer from '../Footer/Footer'
+import ContactSection from "./ContactSection";
+
+const Contactheader = () => {
   useLayoutEffect(() => {
     let tl = gsap.timeline();
 
@@ -37,22 +39,20 @@ const Aboutheader = () => {
       <div className="top-section">
         <div className="header-img">
           <img
-            src="https://i.pinimg.com/736x/56/a7/57/56a75701cc783f9790e782db303041be.jpg"
+            src="https://i.pinimg.com/736x/74/ef/02/74ef02ec5f8d291933d0e38bdf448838.jpg"
             alt="book-reading"
             className="about-img"
           />
         </div>
         <div className="about-header">
-          <h1>ABOUT US</h1>
-          <h3>Taking You Where Dreams Are Made True !</h3>
+          <h1>CONTACT US</h1>
+          <h3>Let's Explore Your Study Abroad Dreams !</h3>
         </div>
       </div>
-      <AboutbodyA/>
-      <AboutbodyB/>
-      <AboutbodyC/>
+      <ContactSection/>
       <Footer/>
     </div>
   );
 };
 
-export default Aboutheader;
+export default Contactheader;

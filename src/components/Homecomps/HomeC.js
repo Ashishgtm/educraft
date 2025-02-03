@@ -2,7 +2,6 @@ import React from 'react'
 import './HomeC.css'
 import { FaCircleNotch } from "react-icons/fa6";
 
-
 const HomeC = () => {
   return (
   

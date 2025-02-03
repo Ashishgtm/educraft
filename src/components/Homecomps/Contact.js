@@ -89,11 +89,7 @@ const ContactForm = () => {
         <button type="submit">SUBMIT</button>
       </form>
 
-      <div className="contact-info">
-        <p>educraftabroadstudies@gmail.com</p>
-        <p>01-4547987, +977-9862403580</p>
-        <p>Putalisadak, Kathmandu</p>
-      </div>
+      
     </div>
 
     </div>

@@ -25,10 +25,10 @@ const Header = () => {
       <Link to="/home" className={location.pathname === "/home" ? "active" : ""}>HOME</Link> 
       <Link to="/about" className={location.pathname === "/about" ? "active" : ""}>ABOUT</Link> 
 
-        <Link to="/services" className={location.pathname === "/services" ? "active" : ""}>BENEFITS</Link>
-        <Link to="/events" className={location.pathname === "/events" ? "active" : ""}>OFFER</Link> 
-        <Link to="/team" className={location.pathname === "/team" ? "active" : ""}>CONTACT US</Link> 
-        <Link to="/contact" className={location.pathname === "/contact" ? "active" : ""}>BUY NOW</Link> 
+        <Link to="/benifits" className={location.pathname === "/benifits" ? "active" : ""}>BENEFITS</Link>
+        <Link to="/offer" className={location.pathname === "/offer" ? "active" : ""}>OFFER</Link> 
+        <Link to="/contact" className={location.pathname === "/contact" ? "active" : ""}>CONTACT</Link> 
+        <Link to="/buy" className={location.pathname === "/buy" ? "active" : ""}>BUY NOW</Link> 
       </nav>
       <div className="contact">
         <button className="contact-btn">
