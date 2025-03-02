@@ -25,8 +25,8 @@ const Header = () => {
       <Link to="/home" className={location.pathname === "/home" ? "active" : ""}>HOME</Link> 
       <Link to="/about" className={location.pathname === "/about" ? "active" : ""}>ABOUT</Link> 
 
-        <Link to="/benifits" className={location.pathname === "/benifits" ? "active" : ""}>BENEFITS</Link>
-        <Link to="/offer" className={location.pathname === "/offer" ? "active" : ""}>OFFER</Link> 
+        <Link to="/services" className={location.pathname === "/services" ? "active" : ""}>SERVICES</Link>
+        <Link to="/universities" className={location.pathname === "/universities" ? "active" : ""}>UNIVERSITIES</Link> 
         <Link to="/contact" className={location.pathname === "/contact" ? "active" : ""}>CONTACT</Link> 
         <Link to="/buy" className={location.pathname === "/buy" ? "active" : ""}>BUY NOW</Link> 
       </nav>

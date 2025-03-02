@@ -20,7 +20,7 @@
 }
 .about-header h1{
     font-size: 4rem;
-    color: #444343;
+    color: #d1cccc;
     text-shadow: 6px 14px 6px rgba(19, 18, 18, 0.829); 
 
 }
@@ -28,7 +28,7 @@
 
 
 .about-header h3{
-    color: white;
+    color: rgb(139, 135, 135);
     margin-top: -1%;
     
 }
