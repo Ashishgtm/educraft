@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 import AboutbodyA from "./AboutbodyA";
 import AboutbodyB from "./AboutbodyB";
 import AboutbodyC from "./AboutbodyC";
-import Footer from '../Footer/Footer'
+import Footer from '../Footer/Footer';
 
 const Aboutheader = () => {
   useLayoutEffect(() => {
@@ -13,21 +13,22 @@ const Aboutheader = () => {
 
     tl.fromTo(
       ".about-img",
-      { x: "-100vw", opacity: 0 }, // Start from left
-      { x: 0, opacity: 1, duration: 1.5, ease: "power3.out" } // End at center
+      { x: "-100vw", opacity: 0, scale: 0.5 }, 
+      { x: 0, opacity: 1, scale: 1, duration: 1.5, ease: "power3.out" }
     );
 
     tl.fromTo(
       ".about-header",
-      { x: "100vw", opacity: 0 }, // Start from right
+      { x: "100vw", opacity: 0 },
       { x: 0, opacity: 1, duration: 1.5, ease: "power3.out" },
-      "-=1.3" // Overlapping animation
+      "-=1.2"
     );
+
     tl.fromTo(
       ".about-header h3",
-      { x: "100vw", opacity: 0 }, // Start from right
-      { x: 0, opacity: 1, duration: 2, ease: "power3.out" },
-      "-=1.3" // Overlapping animation
+      { y: "50px", opacity: 0 },
+      { y: 0, opacity: 1, duration: 1.5, ease: "power3.out" },
+      "-=1"
     );
   }, []);
 
@@ -44,13 +45,13 @@ const Aboutheader = () => {
         </div>
         <div className="about-header">
           <h1>ABOUT US</h1>
-          <h3>Taking You Where Dreams Are Made True !</h3>
+          <h3>Taking You Where Dreams Are Made True!</h3>
         </div>
       </div>
-      <AboutbodyA/>
-      <AboutbodyB/>
-      <AboutbodyC/>
-      <Footer/>
+      <AboutbodyA />
+      <AboutbodyB />
+      <AboutbodyC />
+      <Footer />
     </div>
   );
 };

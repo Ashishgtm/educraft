@@ -1,16 +1,59 @@
+.HomeAfirst {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.HomeAfirst::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://i.pinimg.com/736x/76/74/8d/76748d4dea9f03551bf41947855f1191.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* Adjust the opacity of the image */
+  z-index: -1; /* Ensure it stays behind the content */
+  filter: blur(3px); /* Adds a blur effect */
+
+}
+
+.HomeAfirst::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(14, 13, 13, 0.774); /* Black overlay with 60% opacity */
+  z-index: -1; /* Ensure it stays behind the content */
+}
+
 .homeAcontent {
   display: flex;
   margin-top: 2%;
   margin-left: 10%;
   margin-right: 8%;
+  position: relative; /* Ensure content stays above the background */
+  z-index: 1; /* Ensure content stays above the background */
 }
-
 .welcome {
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 25%;
   margin-bottom: 1%;
+}
+.welcome-start {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 25%;
+  margin-bottom: 1%;
+  color: rgba(255, 255, 255, 0.733);
 }
 
 .iconwelcome {
@@ -35,6 +78,7 @@
   margin-top: 2%;
   margin-left: 3%;
   font-size: 18px;
+  color: rgba(255, 255, 255, 0.733);
 }
 
 .custom-button {
@@ -55,25 +99,53 @@
 .custom-button:hover {
   background-color: #45a049;
 }
-
 .carousel-container {
+  position: relative;
   right: 0;
   width: 50%;
   height: 100vh;
   overflow: hidden;
+  z-index: 2; /* Ensure it stays above the background */
 }
 
+/* Wrap for both image and background */
+.carousel-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+/* Green background behind the image */
+.green-background {
+  position: absolute;
+  top: 4%;
+  left: -10%;
+  width: 130%;
+  height: 90%;
+  background: linear-gradient(145deg, #4CAF50, #45a049); /* Gradient for depth */
+  z-index: -1;
+  transform: rotate3d(1, 1, 0, 45deg); /* Rotates the element in 3D space */
+  border-radius: 40px; /* Rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
+  filter: blur(2px); /* Softens the edges */
+  clip-path: polygon(0% 20%, 85% 0%, 60% 100%, 0 100%);
+
+}
+
+/* Ensure the image stays on top */
 .carousel-image {
   margin-top: 15%;
-  width: 100%;
+  width: 70%;
   height: 80%;
-  border-radius: 50%;
-  background-size: cover;
+  background-size: cover; /* Ensures the image scales correctly */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
   background-position: center;
   transition: opacity 0.5s ease-in-out;
+  border-radius: 8%;
+  z-index: 1; /* Keep image above green background */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Adds shadow to the image */
 }
 
-/* Responsive styles remain the same as in your original code */
 /* Responsive for screens smaller than 1024px (tablets and small desktops) */
 @media (max-width: 1024px) {
   .homeAcontent {

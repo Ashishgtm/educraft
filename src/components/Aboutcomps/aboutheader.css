@@ -1,38 +1,99 @@
-.top-section{
+.top-section {
     margin-top: 4%;
-    padding: 60px 50px;
-    background: linear-gradient(
-    90deg,
-    white -40%,
-    #4ae94f -100%,
-    #000 100%
-    );
+    padding: 8vw 5vw;  /* Adjusted padding to scale dynamically */
+    background: linear-gradient(90deg, #fff 0%, #2b7a2f 50%, #000 100%);
     display: flex;
-    align-items: center; /* Vertically center */
-    justify-content: center; /* Horizontally center */
-    gap: 50px; /* Adds spacing between text and image */
-    text-align: center; /* Centers text inside the header */
-    flex-wrap: wrap; /* Ensures responsiveness */
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;  /* Scales dynamically based on screen size */
+    text-align: center;
+    flex-wrap: wrap;  /* Ensures items wrap on smaller screens */
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
 
+/* About header section */
+.about-header {
+    max-width: 600px;
 }
-.about-header{
-    max-width: 500px; /* Adjust width as needed */
-}
-.about-header h1{
-    font-size: 4rem;
-    color: #444343;
-    text-shadow: 6px 14px 6px rgba(19, 18, 18, 0.829); /* Adds a smooth shadow */
 
+.about-header h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem); /* Adjusts font size dynamically */
+    color: #fff;
+    text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.7);
+    letter-spacing: 2px;
 }
-.about-header h3{
-    color: white;
+
+.about-header h3 {
+    color: #e0e0e0;
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    font-weight: 500;
     margin-top: -1%;
-    
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
 }
-.about-img{
-    width: 200px;  /* Make sure it's square */
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover; 
 
+/* About image */
+.about-img {
+    width: clamp(150px, 20vw, 220px); /* Scales dynamically */
+    height: clamp(150px, 20vw, 220px);
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .top-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 3vw;
+    }
+
+    .about-header {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-section {
+        padding: 10vw 5vw;
+    }
+
+    .about-header h1 {
+        font-size: 3rem;
+    }
+
+    .about-header h3 {
+        font-size: 1.2rem;
+    }
+
+    .about-img {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-section {
+        padding: 12vw 4vw;
+    }
+
+    .about-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-header h3 {
+        font-size: 1rem;
+    }
+
+    .about-img {
+        width: 140px;
+        height: 140px;
+    }
 }

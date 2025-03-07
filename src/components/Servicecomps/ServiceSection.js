@@ -148,7 +148,7 @@ const ServiceSection = () => {
           universities that works together we partner are constantly seeking to
           hire academically talented students and making generous scholarship
           offers.
-          <br />
+          <br /><br/>
           Now a days, Australian government had provide many scholarships award
           for international and national students.
           <br />
@@ -185,7 +185,7 @@ const ServiceSection = () => {
       <div className="about-paragraph">
         <p>
           For convenience and in order to serve Australian Universities and
-          Colleges better, The Next has formed its own Compliance Department.{" "}
+          Colleges better, Educraft has formed its own Compliance Department.{" "}
           <br />
           The Department has designed its own:
           <br />
@@ -207,7 +207,7 @@ const ServiceSection = () => {
         Counseling
         </div>
       <div className="about-paragraph">
-        <p>Career counseling is one of the important features belongs to The Next Education Consultancy.
+        <p>Career counseling is one of the important features belongs to Educraft Abroad Studies.
              Beginning from three to ten and half years of familiarity in their respective fields, our 
              counselors listen to your words and make you peep through what you intend to be tomorrow.
               Feel free to visit us and discover the difference. Our experts are always there to help you.
