@@ -142,8 +142,7 @@ const ServiceSection = () => {
           universities and also give updated info about universities. From the
           beginning phase of researching scholarships, to putting the
           application in the mail, we help to search scholarships for students
-          in college with every step. Counselors from “The Next Education
-          Consultancy” helps the student who are worthy with exceptional
+          in college with every step. Counselors from “Educraft Abroad Studies” helps the student who are worthy with exceptional
           academic records to apply for university scholarships. The
           universities that works together we partner are constantly seeking to
           hire academically talented students and making generous scholarship
